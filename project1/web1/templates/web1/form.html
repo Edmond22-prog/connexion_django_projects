@@ -1,0 +1,7 @@
+<form action="{% url 'home' %}" method="POST">
+    {{ form.as_p }}
+    {% if message %}
+        <h4>{{ message }}</h4>
+    {% endif %}
+    <input type="submit" value="Submit">
+</form>
